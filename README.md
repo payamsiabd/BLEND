@@ -10,28 +10,24 @@ This repository is built on top of [PromptFL](https://github.com/PEILab-Federate
 
 ---
 
-## 🔍 Why Information Imbalance Matters
+## 🔍 Motivation and Method
 
-A key motivation behind BLEND is the **information imbalance between vision and text** in vision-language models.
+A key motivation behind BLEND is the **information imbalance between vision and text** in vision-language models. Visual representations often preserve a broader range of semantic information, while text captures only a subset of those details. This makes the visual branch a natural place for stronger client-specific adaptation, while preserving globally transferable knowledge remains important for generalization. :chatgpt-content-reference{index="0"}
 
-Given latent scene semantics \(S\), visual observation \(V\), and a textual description \(T\) generated from the image, the information flow can be modeled as
+## 🧠 How BLEND Works
 
-\[
-S \rightarrow V \rightarrow T,
-\]
+BLEND addresses this through an **asymmetric personalization strategy**:
 
-which implies, by the data-processing inequality,
+- 🌐 **Global vision and text adapters** are shared and aggregated across clients to capture transferable knowledge.
+- 🎯 A **personalized vision projection adapter** remains local to each client to learn client-specific representations.
+- 🔀 The global and personalized visual representations are **fused** to balance personalization and generalization.
+- ⚓ An **anchor loss** helps preserve generalizable representations during local training. :chatgpt-content-reference{index="1"} :chatgpt-content-reference{index="2"}
 
-\[
-I(S;T) \leq I(S;V).
-\]
+## ✨ Key Idea
 
-This means that the visual modality can preserve richer semantic information than the corresponding textual description. In practice, an image may contain details about color, pose, background, and surrounding objects that are not reflected in a short text description. :chatgpt-content-reference{index="0"}
+BLEND leverages richer visual information for **client-specific personalization** while preserving shared visual and textual knowledge for **generalization to unseen classes**.
 
-This imbalance is important for **personalized federated learning**. Since visual representations can contain a broader range of semantic factors, client-specific visual adaptation can act as a semantic filter that emphasizes locally relevant information. However, excessive personalization can hurt generalization because information that is unimportant for one client may still be useful for unseen classes or other clients. :chatgpt-content-reference{index="1"}
-
-BLEND is designed around this trade-off: it preserves **globally shared visual and textual knowledge** while introducing a **local personalized visual branch**, allowing the model to adapt to each client without sacrificing its ability to generalize.
-
+---
 
 # ⚙️ Setup and Installation
 
