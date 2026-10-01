@@ -12,7 +12,4 @@ First, install `dassl` and its dependencies by following the official installati
 
 Make sure that the `dassl` environment is correctly installed and activated.
 
-After activating the `dassl` environment, install the remaining dependencies by running:
 
-```bash
-pip install -r requirements.txt
