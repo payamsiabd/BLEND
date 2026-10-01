@@ -18,10 +18,10 @@ A key motivation behind BLEND is the **information imbalance between vision and 
 
 BLEND is built around the idea that **personalization and generalization should not be treated symmetrically across modalities**.
 
-- 🎯 The **visual modality** contains richer and more diverse semantic information, making it especially suitable for client-specific adaptation.
-- 🌐 At the same time, globally shared knowledge must be preserved so that personalization does not come at the cost of performance on unseen classes.
-- 🧠 BLEND therefore introduces **asymmetric personalization**, where client-specific adaptation is emphasized on the visual side while globally shared visual and textual representations are maintained.
-- 🔀 By combining personalized and global visual representations, BLEND aims to retain information that is important for each client while still preserving transferable knowledge across the federation.
+- The **visual modality** contains richer and more diverse semantic information, making it especially suitable for client-specific adaptation.
+- At the same time, globally shared knowledge must be preserved so that personalization does not come at the cost of performance on unseen classes.
+- BLEND therefore introduces **asymmetric personalization**, where client-specific adaptation is emphasized on the visual side while globally shared visual and textual representations are maintained.
+- By combining personalized and global visual representations, BLEND aims to retain information that is important for each client while still preserving transferable knowledge across the federation.
 - ⚖️ This design directly targets the central challenge in personalized federated vision-language learning: **improving local adaptation without sacrificing generalization**.
 
 ---
