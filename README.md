@@ -12,7 +12,7 @@ This repository is built on top of [PromptFL](https://github.com/PEILab-Federate
 
 ## 🔍 Motivation and Method
 
-A key motivation behind BLEND is the **information imbalance between vision and text** in vision-language models. Visual representations often preserve a broader range of semantic information, while text captures only a subset of those details. This makes the visual branch a natural place for stronger client-specific adaptation, while preserving globally transferable knowledge remains important for generalization. :chatgpt-content-reference{index="0"}
+A key motivation behind BLEND is the **information imbalance between vision and text** in vision-language models. Visual representations often preserve a broader range of semantic information, while text captures only a subset of those details. This makes the visual branch a natural place for stronger client-specific adaptation, while preserving globally transferable knowledge remains important for generalization. 
 
 ## 🧠 How BLEND Works
 
