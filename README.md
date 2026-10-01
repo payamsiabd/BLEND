@@ -14,18 +14,19 @@ This repository is built on top of [PromptFL](https://github.com/PEILab-Federate
 
 A key motivation behind BLEND is the **information imbalance between vision and text** in vision-language models. Visual representations often preserve a broader range of semantic information, while text captures only a subset of those details. This makes the visual branch a natural place for stronger client-specific adaptation, while preserving globally transferable knowledge remains important for generalization. 
 
-## 🧠 How BLEND Works
+## 🔍 Motivation
 
-BLEND addresses this through an **asymmetric personalization strategy**:
-
-- 🌐 **Global vision and text adapters** are shared and aggregated across clients to capture transferable knowledge.
-- 🎯 A **personalized vision projection adapter** remains local to each client to learn client-specific representations.
-- 🔀 The global and personalized visual representations are **fused** to balance personalization and generalization.
-- ⚓ An **anchor loss** helps preserve generalizable representations during local training. :chatgpt-content-reference{index="1"} :chatgpt-content-reference{index="2"}
+A key motivation behind BLEND is the **information imbalance between vision and text** in vision-language models. Visual representations often preserve a broader range of semantic information, while text captures only a subset of those details. This makes the visual branch a natural place for stronger client-specific adaptation, while preserving globally transferable knowledge remains important for generalization. 
 
 ## ✨ Key Idea
 
-BLEND leverages richer visual information for **client-specific personalization** while preserving shared visual and textual knowledge for **generalization to unseen classes**.
+BLEND is built around the idea that **personalization and generalization should not be treated symmetrically across modalities**.
+
+- 🎯 The **visual modality** contains richer and more diverse semantic information, making it especially suitable for client-specific adaptation.
+- 🌐 At the same time, globally shared knowledge must be preserved so that personalization does not come at the cost of performance on unseen classes.
+- 🧠 BLEND therefore introduces **asymmetric personalization**, where client-specific adaptation is emphasized on the visual side while globally shared visual and textual representations are maintained.
+- 🔀 By combining personalized and global visual representations, BLEND aims to retain information that is important for each client while still preserving transferable knowledge across the federation.
+- ⚖️ This design directly targets the central challenge in personalized federated vision-language learning: **improving local adaptation without sacrificing generalization**.
 
 ---
 
