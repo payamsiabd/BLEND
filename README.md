@@ -1,7 +1,7 @@
 # 🚀 BLEND
 
 This is the official repository for our paper:
-### BLEND: Balancing Personalization vs. Generalization in Federated Vision–Language Models
+### [BLEND: Balancing Personalization vs. Generalization in Federated Vision–Language Models](https://arxiv.org/abs/2610.12907)
 
 ### 🎉 Accepted at NeurIPS 2026
 
