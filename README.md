@@ -38,3 +38,16 @@ First, install `dassl` and its dependencies by following the official installati
 
 Make sure that the `dassl` environment is correctly installed and activated.
 
+
+## Citation
+
+If you find BLEND useful in your research, please consider citing our NeurIPS 2026 paper:
+
+```bibtex
+@inproceedings{abdisarabshali2026blend,
+  title={BLEND: Balancing Personalization vs. Generalization in Federated Vision-Language Models},
+  author={Abdisarabshali, Payam and Nadimi, Fardis and Borazjani, Kasra and Khosravan, Naji and Jin, Richeng and Hosseinalipour, Seyyedali},
+  booktitle={Conference on Neural Information Processing Systems},
+  year={2026}
+}
+```
