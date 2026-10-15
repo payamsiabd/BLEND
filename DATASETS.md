@@ -20,14 +20,10 @@ Datasets list:
 - [Flowers102](#flowers102)
 - [Food101](#food101)
 - [FGVCAircraft](#fgvcaircraft)
-- [SUN397](#sun397)
 - [DTD](#dtd)
 - [EuroSAT](#eurosat)
 - [UCF101](#ucf101)
-- [ImageNetV2](#imagenetv2)
-- [ImageNet-Sketch](#imagenet-sketch)
-- [ImageNet-A](#imagenet-a)
-- [ImageNet-R](#imagenet-r)
+
 
 The instructions to prepare each dataset are detailed below. To ensure reproducibility and fair comparison for future work, we provide fixed train/val/test splits for all datasets except ImageNet where the validation set is used as test set. The fixed splits are either from the original datasets (if available) or created by us.
 
@@ -129,21 +125,6 @@ fgvc_aircraft/
 |–– ... # a bunch of .txt files
 ```
 
-### SUN397
-- Create a folder named  `sun397/` under `$DATA`.
-- Download the images http://vision.princeton.edu/projects/2010/SUN/SUN397.tar.gz.
-- Download the partitions https://vision.princeton.edu/projects/2010/SUN/download/Partitions.zip.
-- Extract these files under `$DATA/sun397/`.
-- Download `split_zhou_SUN397.json` from this [link](https://drive.google.com/file/d/1y2RD81BYuiyvebdN-JymPfyWYcd8_MUq/view?usp=sharing).
-
-The directory structure should look like
-```
-sun397/
-|–– SUN397/
-|–– split_zhou_SUN397.json
-|–– ... # a bunch of .txt files
-```
-
 ### DTD
 - Download the dataset from https://www.robots.ox.ac.uk/~vgg/data/dtd/download/dtd-r1.0.1.tar.gz and extract it to `$DATA`. This should lead to `$DATA/dtd/`.
 - Download `split_zhou_DescribableTextures.json` from this [link](https://drive.google.com/file/d/1u3_QfB467jqHgNXC00UIzbLZRQCg2S7x/view?usp=sharing).
@@ -179,53 +160,4 @@ The directory structure should look like
 ucf101/
 |–– UCF-101-midframes/
 |–– split_zhou_UCF101.json
-```
-
-### ImageNetV2
-- Create a folder named `imagenetv2/` under `$DATA`.
-- Go to this github repo https://github.com/modestyachts/ImageNetV2.
-- Download the matched-frequency dataset from https://s3-us-west-2.amazonaws.com/imagenetv2public/imagenetv2-matched-frequency.tar.gz and extract it to `$DATA/imagenetv2/`.
-- Copy `$DATA/imagenet/classnames.txt` to `$DATA/imagenetv2/`.
-
-The directory structure should look like
-```
-imagenetv2/
-|–– imagenetv2-matched-frequency-format-val/
-|–– classnames.txt
-```
-
-### ImageNet-Sketch
-- Download the dataset from https://github.com/HaohanWang/ImageNet-Sketch.
-- Extract the dataset to `$DATA/imagenet-sketch`.
-- Copy `$DATA/imagenet/classnames.txt` to `$DATA/imagenet-sketch/`.
-
-The directory structure should look like
-```
-imagenet-sketch/
-|–– images/ # contains 1,000 folders whose names have the format of n*
-|–– classnames.txt
-```
-
-### ImageNet-A
-- Create a folder named `imagenet-adversarial/` under `$DATA`.
-- Download the dataset from https://github.com/hendrycks/natural-adv-examples and extract it to `$DATA/imagenet-adversarial/`.
-- Copy `$DATA/imagenet/classnames.txt` to `$DATA/imagenet-adversarial/`.
-
-The directory structure should look like
-```
-imagenet-adversarial/
-|–– imagenet-a/ # contains 200 folders whose names have the format of n*
-|–– classnames.txt
-```
-
-### ImageNet-R
-- Create a folder named `imagenet-rendition/` under `$DATA`.
-- Download the dataset from https://github.com/hendrycks/imagenet-r and extract it to `$DATA/imagenet-rendition/`.
-- Copy `$DATA/imagenet/classnames.txt` to `$DATA/imagenet-rendition/`.
-
-The directory structure should look like
-```
-imagenet-rendition/
-|–– imagenet-r/ # contains 200 folders whose names have the format of n*
-|–– classnames.txt
 ```
