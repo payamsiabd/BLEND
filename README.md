@@ -5,9 +5,6 @@ This is the official repository for our paper:
 
 ### 🎉 Accepted at NeurIPS 2026
 
-
-This repository is built on top of [CoOp](https://github.com/KaiyangZhou/CoOp/tree/main). Please follow the steps below to properly set up the environment and required datasets.
-
 ---
 
 ## 🔍 Motivation
@@ -30,9 +27,7 @@ BLEND is built around the idea that **personalization and generalization should 
 
 ## 🛠️ 1. Environment Setup
 
-This project depends on the [Dassl.pytorch](https://github.com/KaiyangZhou/Dassl.pytorch) framework.
-
-First, install `dassl` and its dependencies by following the official installation instructions:
+This repository is built on top of [CoOp](https://github.com/KaiyangZhou/CoOp/tree/main). Please follow the steps below to properly set up the environment and required datasets. First, install `dassl` and its dependencies by following the official installation instructions:
 
 - 🔗 https://github.com/KaiyangZhou/Dassl.pytorch#installation
 
