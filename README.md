@@ -36,7 +36,7 @@ First, install `dassl` and its dependencies by following the official installati
 
 - 🔗 https://github.com/KaiyangZhou/Dassl.pytorch#installation
 
-Make sure that the `dassl` environment is correctly installed and activated. Then, run pip install -r requirements.txt to install the additional packages required by CLIP. After that, the setup is complete and you are ready to proceed.
+Make sure that the `dassl` environment is correctly installed and activated. Then, run `pip install -r requirements.txt` to install the additional packages required by `CLIP`. After that, the setup is complete and you are ready to proceed.
 
 ## 📊 Dataset
 Follow [DATASETS.md](https://github.com/payamsiabd/BLEND/blob/main/DATASETS.md) to install the datasets.
