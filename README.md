@@ -39,7 +39,7 @@ First, install `dassl` and its dependencies by following the official installati
 Make sure that the `dassl` environment is correctly installed and activated.
 
 ## 📊 Dataset
-Follow DATASETS.md to install the datasets.
+Follow [DATASETS.md](https://github.com/payamsiabd/BLEND/blob/main/DATASETS.md) to install the datasets.
 
 # 📚 Citation
 
