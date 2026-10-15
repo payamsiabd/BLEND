@@ -6,7 +6,7 @@ This is the official repository for our paper:
 ### 🎉 Accepted at NeurIPS 2026
 
 
-This repository is built on top of [PromptFL](https://github.com/PEILab-Federated-Learning/PromptFL). Please follow the steps below to properly set up the environment and required datasets.
+This repository is built on top of [CoOp](https://github.com/KaiyangZhou/CoOp/tree/main). Please follow the steps below to properly set up the environment and required datasets.
 
 ---
 
@@ -36,7 +36,7 @@ First, install `dassl` and its dependencies by following the official installati
 
 - 🔗 https://github.com/KaiyangZhou/Dassl.pytorch#installation
 
-Make sure that the `dassl` environment is correctly installed and activated.
+Make sure that the `dassl` environment is correctly installed and activated. Then, run pip install -r requirements.txt to install the additional packages required by CLIP. After that, the setup is complete and you are ready to proceed.
 
 ## 📊 Dataset
 Follow [DATASETS.md](https://github.com/payamsiabd/BLEND/blob/main/DATASETS.md) to install the datasets.
